@@ -114,16 +114,7 @@ function Gameboard(props) {
           </div>
         )
       })}
-    </div>
-    
-
-
-
-
-
-
-
-    
+    </div>    
   )
 }
 
