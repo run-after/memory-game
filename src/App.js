@@ -8,10 +8,17 @@ function App() {
 
   const incrementScore = () => {
     setScore(score + 1);
+    newHiScore();
   };
 
   const newHiScore = () => {
-    setHiScore(score);
+    if (hiScore <= score) {
+      setHiScore(hiScore +1);
+    }
+  }
+
+  const gameOver = () => {
+    setScore(0);
   }
 
 
@@ -28,7 +35,7 @@ function App() {
         <div className='intro'>
           Choose each card once. Do not select the same card twice, otherwise you lose.
         </div>
-        < Gameboard />
+        < Gameboard incrementScore={incrementScore} gameOver={gameOver} />
       </main>
     </div>
   );
