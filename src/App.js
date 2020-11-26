@@ -1,5 +1,6 @@
 import './styles/App.css';
 import React, { useState } from 'react';
+import Gameboard from './components/Gameboard';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -27,18 +28,7 @@ function App() {
         <div className='intro'>
           Choose each card once. Do not select the same card twice, otherwise you lose.
         </div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
-        <div className='card'></div>
+        < Gameboard />
       </main>
     </div>
   );
