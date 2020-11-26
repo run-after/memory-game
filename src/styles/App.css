@@ -1,0 +1,38 @@
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.score-card > * {
+  text-align: end;
+  padding: 2.5px;
+}
+
+main {
+  background: #282c34ef;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: #727c8f;
+  flex-basis: 100%;
+}
+
+.card {
+  background: white;
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 15px;
+}
